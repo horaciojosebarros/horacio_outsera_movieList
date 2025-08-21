@@ -1,4 +1,4 @@
-package com.example.raspberry;
+package com.api.outsera;
 
 import jakarta.persistence.*;
 

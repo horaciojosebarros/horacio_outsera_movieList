@@ -1,4 +1,4 @@
-package com.example.raspberry;
+package com.api.outsera;
 
 public class IntervalDTO implements Comparable<IntervalDTO> {
     private String producer;

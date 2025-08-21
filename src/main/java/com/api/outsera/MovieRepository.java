@@ -1,4 +1,4 @@
-package com.example.raspberry;
+package com.api.outsera;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
