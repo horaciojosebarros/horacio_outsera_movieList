@@ -17,12 +17,12 @@ public class ProdutorIntervaloservice {
     }
 
     public Map<String, List<IntervalDTO>> computeintervalos() {
-        List<Movie> winners = movieRepository.findByWinnerTrue();
+        List<Filmes> ganhadores = movieRepository.findByGanhadorTrue();
 
         Map<String, List<Integer>> winsByProducer = new HashMap<>();
-        for (Movie m : winners) {
-            for (String p : splitprodutores(m.getprodutores())) {
-                winsByProducer.computeIfAbsent(p, k -> new ArrayList<>()).add(m.getYear());
+        for (Filmes m : ganhadores) {
+            for (String p : splitprodutores(m.getProdutores())) {
+                winsByProducer.computeIfAbsent(p, k -> new ArrayList<>()).add(m.getAno());
             }
         }
 

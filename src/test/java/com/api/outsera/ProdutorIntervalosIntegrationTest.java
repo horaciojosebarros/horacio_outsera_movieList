@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class ProducerintervalosIntegrationTest {
+class ProdutorIntervalosIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
