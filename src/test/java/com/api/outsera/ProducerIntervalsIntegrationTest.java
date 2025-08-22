@@ -12,14 +12,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class ProducerIntervalsIntegrationTest {
+class ProducerintervalosIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    void shouldReturnMinAndMaxIntervals() throws Exception {
-        mockMvc.perform(get("/producers/intervals"))
+    void shouldReturnMinAndMaxintervalos() throws Exception {
+        mockMvc.perform(get("/produtores/intervalos"))
                 .andExpect(status().isOk())
                 // MIN: Joel Silver, interval 1 (1990-1991)
                 .andExpect(jsonPath("$.min[0].producer").value("Joel Silver"))

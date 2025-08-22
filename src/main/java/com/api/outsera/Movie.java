@@ -9,34 +9,34 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Integer year;
+    private Integer release_year;
     private String title;
     private String studios;
     @Column(length = 1000)
-    private String producers;
+    private String produtores;
     private Boolean winner;
 
     public Movie() {}
 
-    public Movie(Integer year, String title, String studios, String producers, Boolean winner) {
-        this.year = year;
+    public Movie(Integer year, String title, String studios, String produtores, Boolean winner) {
+        this.release_year = year;
         this.title = title;
         this.studios = studios;
-        this.producers = producers;
+        this.produtores = produtores;
         this.winner = winner;
     }
 
     public Long getId() { return id; }
-    public Integer getYear() { return year; }
+    public Integer getYear() { return release_year; }
     public String getTitle() { return title; }
     public String getStudios() { return studios; }
-    public String getProducers() { return producers; }
+    public String getprodutores() { return produtores; }
     public Boolean getWinner() { return winner; }
 
     public void setId(Long id) { this.id = id; }
-    public void setYear(Integer year) { this.year = year; }
+    public void setYear(Integer year) { this.release_year = year; }
     public void setTitle(String title) { this.title = title; }
     public void setStudios(String studios) { this.studios = studios; }
-    public void setProducers(String producers) { this.producers = producers; }
+    public void setprodutores(String produtores) { this.produtores = produtores; }
     public void setWinner(Boolean winner) { this.winner = winner; }
 }

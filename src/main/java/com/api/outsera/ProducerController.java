@@ -9,17 +9,17 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/producers")
+@RequestMapping("/produtores")
 public class ProducerController {
 
-    private final ProducerIntervalService service;
+    private final ProdutorIntervaloservice service;
 
-    public ProducerController(ProducerIntervalService service) {
+    public ProducerController(ProdutorIntervaloservice service) {
         this.service = service;
     }
 
-    @GetMapping("/intervals")
-    public ResponseEntity<Map<String, List<IntervalDTO>>> getIntervals() {
-        return ResponseEntity.ok(service.computeIntervals());
+    @GetMapping("/intervalos")
+    public ResponseEntity<Map<String, List<IntervalDTO>>> getintervalos() {
+        return ResponseEntity.ok(service.computeintervalos());
     }
 }

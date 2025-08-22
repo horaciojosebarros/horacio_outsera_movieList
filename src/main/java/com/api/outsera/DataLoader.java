@@ -23,7 +23,7 @@ public class DataLoader implements CommandLineRunner {
 
         ClassPathResource resource = new ClassPathResource("movielist.csv");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8))) {
-            // CSV is semicolon-separated with header: year;title;studios;producers;winner
+            // CSV is semicolon-separated with header: year;title;studios;produtores;winner
             String header = br.readLine(); // skip header
             String line;
             while ((line = br.readLine()) != null) {
@@ -33,10 +33,10 @@ public class DataLoader implements CommandLineRunner {
                 Integer year = parts[0].isEmpty() ? null : Integer.parseInt(parts[0].trim());
                 String title = parts[1].trim();
                 String studios = parts[2].trim();
-                String producers = parts[3].trim();
+                String produtores = parts[3].trim();
                 String winnerStr = parts[4].trim();
                 boolean winner = "yes".equalsIgnoreCase(winnerStr);
-                repository.save(new Movie(year, title, studios, producers, winner));
+                repository.save(new Movie(year, title, studios, produtores, winner));
             }
         }
     }

@@ -5,7 +5,7 @@ API RESTful para ler a lista de indicados/vencedores de **Pior Filme** do Golden
 ## Requisitos atendidos
 
 - Leitura do CSV e carga em **H2** (em memória) ao iniciar a aplicação.
-- API no **Nível 2 de Richardson**: recursos (`/producers/intervals`) com uso de HTTP e JSON.
+- API no **Nível 2 de Richardson**: recursos (`/produtores/intervalos`) com uso de HTTP e JSON.
 - **Testes de integração** com `@SpringBootTest` + `MockMvc` asseguram a conformidade dos dados.
 - Banco embarcado **H2** — nenhuma instalação externa necessária.
 
@@ -24,7 +24,7 @@ mvn spring-boot:run
 A aplicação sobe em `http://localhost:8080`.
 
 ### Endpoint
-`GET /producers/intervals`
+`GET /horacio/api/produtores/intervalos`
 
 **Exemplo de resposta** (pode haver empates, retornamos listas para `min` e `max`):
 ```json
