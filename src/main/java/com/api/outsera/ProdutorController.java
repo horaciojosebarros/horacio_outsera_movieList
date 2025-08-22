@@ -10,11 +10,11 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/produtores")
-public class ProducerController {
+public class ProdutorController {
 
     private final ProdutorIntervaloservice service;
 
-    public ProducerController(ProdutorIntervaloservice service) {
+    public ProdutorController(ProdutorIntervaloservice service) {
         this.service = service;
     }
 

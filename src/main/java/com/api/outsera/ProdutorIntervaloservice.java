@@ -9,10 +9,10 @@ import java.util.stream.Collectors;
 @Service
 public class ProdutorIntervaloservice {
 
-    private final MovieRepository movieRepository;
+    private final FilmeRepository movieRepository;
     private static final Pattern AND_SPLIT = Pattern.compile("\\s+and\\s+", Pattern.CASE_INSENSITIVE);
 
-    public ProdutorIntervaloservice(MovieRepository movieRepository) {
+    public ProdutorIntervaloservice(FilmeRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
 

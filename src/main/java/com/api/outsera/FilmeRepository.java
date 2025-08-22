@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface MovieRepository extends JpaRepository<Filmes, Long> {
+public interface FilmeRepository extends JpaRepository<Filmes, Long> {
     List<Filmes> findByGanhadorTrue();
 }

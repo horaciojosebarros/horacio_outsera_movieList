@@ -11,9 +11,9 @@ import java.nio.charset.StandardCharsets;
 @Component
 public class DataLoader implements CommandLineRunner {
 
-    private final MovieRepository repository;
+    private final FilmeRepository repository;
 
-    public DataLoader(MovieRepository repository) {
+    public DataLoader(FilmeRepository repository) {
         this.repository = repository;
     }
 
